@@ -14,7 +14,7 @@ class LojaForm(forms.ModelForm):
 class ProdutosForm(forms.ModelForm):
     nome = forms.CharField(label="Nome do Produto:")
     preco = forms.DecimalField(label="Preço:")
-    destaque = forms.BooleanField(label="Destacar Produto?")
+    destaque = forms.BooleanField(label="Destacar Produto?") #check box
     class Meta:
 
         model = Produto

@@ -11,7 +11,7 @@ class Loja(models.Model):
         return self.nome
 
 class Produto(models.Model):
-    loja = models.ForeignKey(Loja, on_delete=models.DO_NOTHING)
+    loja = models.ForeignKey(Loja, on_delete=models.DO_NOTHING) #chave para linkar o Produto a Loja
     nome = models.CharField(max_length=100)
     preco = models.DecimalField(max_digits=9, decimal_places=2)
     destaque = models.BooleanField()

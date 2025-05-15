@@ -1,11 +1,5 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lojas</title>
-</head>
-<body>
+{% extends 'menu_interno.html' %}
+{% block content %}
     <h1>Lojas</h1>
 
     <a href="{% url 'incluir_loja' %}">Incluir</a>
@@ -33,10 +27,4 @@
         {% endfor %}
     </tbody>
     </table>
-</body>
-<script>
-    function excluir(){
-        return confirm("Deseja Excluir?");
-    }
-</script>
-</html>
+{% endblock %}

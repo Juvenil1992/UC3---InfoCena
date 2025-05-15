@@ -6,6 +6,8 @@ from django.db.models.functions import Lower
 
 # Create your views here.
 
+#funções da view
+
 #Funções para Cadastro Loja
 
 def index(resquest):
@@ -78,3 +80,6 @@ def excluir_produto(request, codigo):
     Produto.delete(produto)
 
     return redirect('listar_produtos')
+
+def area_interna(request):
+    return render(request,'area_interna.html')
