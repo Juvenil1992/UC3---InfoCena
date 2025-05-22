@@ -1,8 +1,8 @@
 {% extends 'menu_interno.html' %}
 {% block content %}
     <h1>Produtos</h1>
-    <a href="{% url 'incluir_produtos' %}">Incluir</a>
-<table>
+    <a href="{% url 'incluir_produtos' %}" class="btn btn-primary">Incluir</a>
+<table class ="table table-striped">
     <thead>
     
     
@@ -21,8 +21,8 @@
             <td>{{p.loja}}</td>
             <td>{{p.nome}}</td>
             <td>{{p.preco}}</td>
-            <td><a href="{% url 'alterar_produto' p.id %}">Alterar</a>
-                <a href="{% url 'excluir_produto' p.id %} " onclick='return excluir()'>Excluir</a>
+            <td><a href="{% url 'alterar_produto' p.id %}" class="btn btn-secondary">Alterar</a>
+                <a href="{% url 'excluir_produto' p.id %} " onclick='return excluir()' class="btn btn-danger">Excluir</a>
             </td>
         </tr>
         {% endfor %}

@@ -2,8 +2,8 @@
 {% block content %}
     <h1>Lojas</h1>
 
-    <a href="{% url 'incluir_loja' %}">Incluir</a>
-    <table>
+    <a href="{% url 'incluir_loja' %}" class="btn btn-primary">Incluir</a>
+    <table class="table table-striped">
     <thead>
     
     
@@ -17,13 +17,20 @@
     <tbody>
         {% for l in lojas %}
         <tr>
-            <td>{{l.nome}}</td>
-            <td>{{l.telefone}}</td>
-            <td><a href="{% url 'alterar_loja' l.id %}">Alterar</a>
-                <a href="{% url 'excluir_loja' l.id %} " onclick='return excluir()'>Excluir</a>
+            <td>{{ l.nome }}</td>
+            <td>{{ l.telefone }}</td>
+            <td><a href="{% url 'alterar_loja' l.id %}"
+                  class="btn btn-secondary">
+                    Alterar
+                </a> 
+                <!---->
+                <a href="{% url 'excluir_loja' l.id %}"
+                   onclick="return excluir()"
+                   class="btn btn-danger">                    
+                    Excluir
+                </a>
             </td>
-        
-        </tr>
+        </tr>   
         {% endfor %}
     </tbody>
     </table>

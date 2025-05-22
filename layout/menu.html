@@ -1,9 +1,36 @@
-<a href='{% url "index" %}'>
-    Institucional
-</a>
-<a href="{% url 'quem_somos' %}">
-    Quem Somos
-</a>
-<a href="{% url 'area_interna' %}">
-    área Interna
-</a>
+<nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="{% url 'index' %}">
+            <img src="/imagens/computador.jpg" />
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+            data-bs-target="#menu" aria-controls="menu" aria-expanded="false">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a href="{% url 'quem_somos' %}" class="nav-link">Quem somos</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Alugue sua loja</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Lojas</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Produtos</a> 
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Cadastre-se</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">Fale Conosco</a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'area_interna' %}" class="nav-link">Área Interna</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>

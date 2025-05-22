@@ -1,9 +1,10 @@
 {% extends 'menu_interno.html' %}
 {% block content %}
+{% load django_bootstrap5 %}
     <form method="post">
-        {{ formulario }}
+        {% bootstrap_form formulario %}
         {% csrf_token %}
-        <input type="submit" value="Gravar" />
-        <input type="reset" value="Limpar" />
+        <input type="submit" value="Gravar" class="btn btn-primary"/>
+        <input type="reset" value="Limpar" class="btn btn-secondary"/>
     </form>
 {% endblock %}
