@@ -1,0 +1,9 @@
+{% extends 'principal.html' %}
+{% block content %}
+     <h1>Produtos</h1>
+    {% for p in produtos %}
+        <P> {{p.nome}}  <br>Valor: {{p.preco}}<br>Loja: {{p.loja.nome}}. </P>
+
+    {% endfor %}
+
+{% endblock %}

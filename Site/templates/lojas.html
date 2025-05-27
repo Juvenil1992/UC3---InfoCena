@@ -1,0 +1,9 @@
+{% extends 'principal.html' %}
+{% block content %}
+     <h1>Lojas</h1>
+    {% for l in lojas %}
+        <P> {{l.nome}}  <br> Stand: {{l.numero}}<br>Contato: {{l.telefone}}. </P>
+
+    {% endfor %}
+
+{% endblock %}
