@@ -9,7 +9,7 @@ p {
 }
 
 .diferente{
-    color: #00ffcc;
+    color: #000000;
 }
 
 img {
@@ -24,4 +24,87 @@ a {
 div {
     width: 50%;
     display: inline-block;
+}
+
+body{
+  
+    background-color: rgb(238, 238, 238);
+    background-image: url(../imagens/pagina_principal.jfif);
+
+}
+
+.interna{
+  
+    background-color: rgb(238, 238, 238);
+    background-image: url(../imagens/papel_parede5.png) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+ 
+}
+
+
+
+h1{
+    color: rgb(255, 255, 255);
+    background-color: rgb(66, 65, 65);
+    border: black 5px ;
+    box-shadow: rgb(65, 64, 64) 10px 10px 10px;
+    border-radius: 8px ;
+    width: 100%;
+}
+
+h2{
+
+    color: rgb(255, 255, 255);
+    background-color: rgb(85, 82, 82);
+    border: black;
+    box-shadow: gray;
+    border-radius: 8px ;
+
+}
+
+form{
+
+    background-color: rgb(231, 231, 231);
+    border-radius: 8px;
+}
+
+nav{
+
+    background-color: rgb(21, 88, 148);
+    box-shadow: rgb(65, 64, 64) 10px 10px 10px;
+    border-radius: 8px ;
+    width: 100%;
+}
+
+a:hover {
+    color: red;
+  }
+
+.tabela{
+    background-color: aliceblue ;
+    width: 350px;
+    border: solid #000000;
+    border-radius: 8px ;
+    margin-left: 20px ;
+    
+}
+
+.quem_somos{
+    background-color: aliceblue;
+    border: solid #5c5c5c;
+    border-radius: 8px ;
+    margin-left: 20px ;
+}
+
+.footer-container{
+    color: white;
+    text-align: center;
+    background-color: rgb(21, 88, 148);
+    border: solid rgba(0,0,0,0.3);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    
 }

@@ -5,9 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shopping InfoCena</title>
     {% load django_bootstrap5 %}
+    {% load static %}
     {% bootstrap_css %}
+    <link rel="stylesheet" href="{% static '/css/estilo.css' %}" />
 </head>
-<body>
+<body class ='interna'>
     <div class="container">
       {% include 'menu_interno.html' %}
       {% block content %}
